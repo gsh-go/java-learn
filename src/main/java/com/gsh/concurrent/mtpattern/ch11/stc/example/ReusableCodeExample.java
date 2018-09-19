@@ -13,12 +13,13 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch11.stc.example;
 
+import com.gsh.concurrent.mtpattern.ch11.stc.AbstractSerializer;
+import com.gsh.concurrent.mtpattern.ch11.stc.TaskProcessor;
+
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-import io.github.viscent.mtpattern.ch11.stc.AbstractSerializer;
-import io.github.viscent.mtpattern.ch11.stc.TaskProcessor;
 
 public class ReusableCodeExample {
 

@@ -13,9 +13,11 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch12.ms.example;
 
-import io.github.viscent.mtpattern.ch12.ms.RetryInfo;
-import io.github.viscent.mtpattern.ch12.ms.SubTaskFailureException;
-import io.github.viscent.util.Debug;
+
+
+import com.gsh.concurrent.mtpattern.ch12.ms.RetryInfo;
+import com.gsh.concurrent.mtpattern.ch12.ms.SubTaskFailureException;
+import com.gsh.concurrent.util.Debug;
 
 import java.math.BigInteger;
 import java.util.Set;

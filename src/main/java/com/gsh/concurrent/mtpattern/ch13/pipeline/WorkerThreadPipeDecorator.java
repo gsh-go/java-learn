@@ -13,9 +13,8 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch13.pipeline;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch5.tpt.TerminationToken;
-
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.mtpattern.ch5.tpt.TerminationToken;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.BlockingQueue;

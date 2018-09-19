@@ -13,8 +13,9 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch12.ms.example;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.util.Debug;
+
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.util.Debug;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;

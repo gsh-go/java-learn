@@ -13,7 +13,6 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch11.stc.example;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
 
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -26,6 +25,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPClientConfig;

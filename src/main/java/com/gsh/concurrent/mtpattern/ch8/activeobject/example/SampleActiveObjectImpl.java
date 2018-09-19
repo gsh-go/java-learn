@@ -13,7 +13,8 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch8.activeobject.example;
 
-import io.github.viscent.util.Debug;
+
+import com.gsh.concurrent.util.Debug;
 
 public class SampleActiveObjectImpl {
 

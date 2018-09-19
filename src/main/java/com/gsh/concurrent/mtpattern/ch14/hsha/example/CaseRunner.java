@@ -13,7 +13,8 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch14.hsha.example;
 
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
+
+import com.gsh.concurrent.mtpattern.ch5.tpt.example.AlarmType;
 
 public class CaseRunner {
 

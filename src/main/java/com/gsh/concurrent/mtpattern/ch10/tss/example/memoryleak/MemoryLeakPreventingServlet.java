@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import io.github.viscent.mtpattern.ch10.tss.ManagedThreadLocal;
+import com.gsh.concurrent.mtpattern.ch10.tss.ManagedThreadLocal;
 
 
 @WebServlet("/noleak")

@@ -13,15 +13,16 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch14.hsha.example;
 
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
+
+import com.gsh.concurrent.mtpattern.ch5.tpt.example.AlarmType;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.Connection;
 
-import org.apache.log4j.Logger;
 
 public class SampleAlarmClient {
-	private final static Logger logger = Logger
-	    .getLogger(SampleAlarmClient.class);
+	private final static Logger logger = LoggerFactory.getLogger(SampleAlarmClient.class);
 
 	// 告警日志抑制阈值
 	private static final int ALARM_MSG_SUPRESS_THRESHOLD = 10;

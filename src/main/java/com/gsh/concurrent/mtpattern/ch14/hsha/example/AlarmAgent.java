@@ -13,11 +13,12 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch14.hsha.example;
 
-import io.github.viscent.mtpattern.ch4.gs.Blocker;
-import io.github.viscent.mtpattern.ch4.gs.ConditionVarBlocker;
-import io.github.viscent.mtpattern.ch4.gs.GuardedAction;
-import io.github.viscent.mtpattern.ch4.gs.Predicate;
-import io.github.viscent.util.Debug;
+
+import com.gsh.concurrent.mtpattern.ch4.gs.Blocker;
+import com.gsh.concurrent.mtpattern.ch4.gs.ConditionVarBlocker;
+import com.gsh.concurrent.mtpattern.ch4.gs.GuardedAction;
+import com.gsh.concurrent.mtpattern.ch4.gs.Predicate;
+import com.gsh.concurrent.util.Debug;
 
 import java.util.Timer;
 import java.util.TimerTask;

@@ -13,6 +13,9 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch12.ms.example;
 
+import com.gsh.concurrent.mtpattern.ch12.ms.*;
+import com.gsh.concurrent.util.Debug;
+
 import java.math.BigInteger;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -23,13 +26,7 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
-import io.github.viscent.mtpattern.ch12.ms.AbstractMaster;
-import io.github.viscent.mtpattern.ch12.ms.RetryInfo;
-import io.github.viscent.mtpattern.ch12.ms.SlaveSpec;
-import io.github.viscent.mtpattern.ch12.ms.SubTaskFailureException;
-import io.github.viscent.mtpattern.ch12.ms.TaskDivideStrategy;
-import io.github.viscent.mtpattern.ch12.ms.WorkerThreadSlave;
-import io.github.viscent.util.Debug;
+
 
 public class ParallelPrimeGenerator {
 
@@ -69,7 +66,7 @@ class Range {
  * 质数生成器服务。 模式角色：Master-Slave.Master
  */
 class PrimeGeneratorService extends
-    AbstractMaster<Range, Set<BigInteger>, Set<BigInteger>> {
+		AbstractMaster<Range, Set<BigInteger>, Set<BigInteger>> {
 
 	public PrimeGeneratorService() {
 		this.init();

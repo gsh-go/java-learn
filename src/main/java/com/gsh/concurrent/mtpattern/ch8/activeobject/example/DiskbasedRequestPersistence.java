@@ -25,16 +25,15 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.logging.Logger;
 
-import org.apache.log4j.Logger;
-
-import io.github.viscent.util.Tools;
+import com.gsh.concurrent.util.Tools;
+import org.slf4j.LoggerFactory;
 
 public class DiskbasedRequestPersistence implements RequestPersistence {
     // 负责缓存文件的存储管理
     final SectionBasedDiskStorage storage = new SectionBasedDiskStorage();
-    final static Logger logger =
-            Logger.getLogger(DiskbasedRequestPersistence.class);
+    final static Logger logger = (Logger) LoggerFactory.getLogger(DiskbasedRequestPersistence.class);
 
     // 类MMSDeliverRequest的源码参见本书的配套下载。
     @Override
@@ -47,7 +46,7 @@ public class DiskbasedRequestPersistence implements RequestPersistence {
             objOut.writeObject(request);
         } catch (IOException e) {
             storage.decrementSectionFileCount(fileNameParts[1]);
-            logger.error("Failed to store request", e);
+            logger.info("Failed to store request");
         }
     }
 

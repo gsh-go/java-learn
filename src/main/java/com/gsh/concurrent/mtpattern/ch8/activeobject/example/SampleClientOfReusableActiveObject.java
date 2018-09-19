@@ -13,12 +13,13 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch8.activeobject.example;
 
+import com.gsh.concurrent.mtpattern.ch8.activeobject.ActiveObjectProxy;
+import com.gsh.concurrent.util.Debug;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import io.github.viscent.mtpattern.ch8.activeobject.ActiveObjectProxy;
-import io.github.viscent.util.Debug;
 
 public class SampleClientOfReusableActiveObject {
 

@@ -13,9 +13,10 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch10.tss.example;
 
+import com.gsh.concurrent.util.Debug;
+
 import java.util.concurrent.atomic.AtomicInteger;
 
-import io.github.viscent.util.Debug;
 
 public class ImplicitParameterPassing {
 

@@ -18,7 +18,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
 
 /**
  * Serial Thread Confinement模式WorkerThread参与者可复用实现。

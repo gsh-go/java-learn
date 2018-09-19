@@ -13,6 +13,8 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch10.tss.example;
 
+import com.gsh.concurrent.util.Debug;
+
 import java.text.DecimalFormat;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.SynchronousQueue;
@@ -20,7 +22,6 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.util.Debug;
 
 public class SmsVerficationCodeSender {
     private static final ExecutorService EXECUTOR =

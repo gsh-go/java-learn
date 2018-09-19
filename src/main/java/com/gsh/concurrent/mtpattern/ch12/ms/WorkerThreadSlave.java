@@ -13,7 +13,7 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch12.ms;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.Callable;
@@ -30,8 +30,7 @@ import java.util.concurrent.FutureTask;
  * @param <V>
  *          子任务处理结果类型
  */
-public abstract class WorkerThreadSlave<T, V> extends
-    AbstractTerminatableThread implements SlaveSpec<T, V> {
+public abstract class WorkerThreadSlave<T, V> extends AbstractTerminatableThread implements SlaveSpec<T, V> {
 	private final BlockingQueue<Runnable> taskQueue;
 
 	public WorkerThreadSlave(BlockingQueue<Runnable> taskQueue) {

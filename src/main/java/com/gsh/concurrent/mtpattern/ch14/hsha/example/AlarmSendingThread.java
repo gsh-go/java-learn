@@ -18,9 +18,9 @@ import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.mtpattern.ch5.tpt.example.AlarmType;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
 
 /*
  * 告警发送线程。

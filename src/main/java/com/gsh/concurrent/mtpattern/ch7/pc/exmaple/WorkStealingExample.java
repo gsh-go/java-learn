@@ -17,10 +17,11 @@ import java.util.Random;
 import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.LinkedBlockingDeque;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch5.tpt.TerminationToken;
-import io.github.viscent.mtpattern.ch7.pc.WorkStealingChannel;
-import io.github.viscent.mtpattern.ch7.pc.WorkStealingEnabledChannel;
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.mtpattern.ch5.tpt.TerminationToken;
+import com.gsh.concurrent.mtpattern.ch7.pc.WorkStealingChannel;
+import com.gsh.concurrent.mtpattern.ch7.pc.WorkStealingEnabledChannel;
+
 
 /**
  * 工作窃取算法示例。 该类使用Two-phase Termination模式（参见第5章）。

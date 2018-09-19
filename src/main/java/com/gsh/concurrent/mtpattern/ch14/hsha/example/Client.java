@@ -13,19 +13,22 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch14.hsha.example;
 
+import com.gsh.concurrent.mtpattern.ch5.tpt.example.AlarmType;
+import com.gsh.concurrent.util.Debug;
+import com.gsh.elasticsearch.ElasticsearchTest;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
-import org.apache.log4j.Logger;
 
-import io.github.viscent.mtpattern.ch5.tpt.example.AlarmType;
-import io.github.viscent.util.Debug;
 
 public class Client {
-	private final static Logger logger=Logger.getLogger(Client.class);
+	private Logger logger = LoggerFactory.getLogger(Client.class);
 	public static void main(String[] args) {
 //		Debug.info("started.");
 //		

@@ -13,7 +13,9 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch5.tpt;
 
-import org.apache.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 可停止的抽象线程。
@@ -24,8 +26,8 @@ import org.apache.log4j.Logger;
  */
 public abstract class AbstractTerminatableThread extends Thread
         implements Terminatable {
-    final static Logger logger =
-            Logger.getLogger(AbstractTerminatableThread.class);
+    private final static Logger logger = LoggerFactory.getLogger(AbstractTerminatableThread.class);
+
     private final boolean DEBUG = true;
 
     // 模式角色：Two-phaseTermination.TerminationToken
@@ -87,7 +89,7 @@ public abstract class AbstractTerminatableThread extends Thread
             ex = e;
             if (e instanceof InterruptedException) {
                 if (DEBUG) {
-                    logger.debug(e);
+                   e.printStackTrace();
                 }
             } else {
                 logger.error("", e);

@@ -13,11 +13,12 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch7.pc.exmaple;
 
+import com.gsh.concurrent.util.Debug;
+
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import io.github.viscent.util.Debug;
 
 public class CaseRunner {
 

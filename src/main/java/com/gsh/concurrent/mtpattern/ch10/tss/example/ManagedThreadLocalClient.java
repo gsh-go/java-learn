@@ -14,8 +14,9 @@ http://www.broadview.com.cn/27006
 package com.gsh.concurrent.mtpattern.ch10.tss.example;
 
 //import io.github.viscent.mtpattern.tss.InitialValueProvider;
-import io.github.viscent.mtpattern.ch10.tss.ManagedThreadLocal;
-import io.github.viscent.util.Debug;
+import com.gsh.concurrent.mtpattern.ch10.tss.ManagedThreadLocal;
+import com.gsh.concurrent.util.Debug;
+
 
 public class ManagedThreadLocalClient {
     final static ManagedThreadLocal<Long> mtl;

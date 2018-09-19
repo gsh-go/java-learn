@@ -2,8 +2,9 @@ package com.gsh.concurrent.mtpattern.ch6.promise.example;
 
 import java.io.File;
 
-import io.github.viscent.util.Debug;
-import io.github.viscent.util.Tools;
+import com.gsh.concurrent.util.Debug;
+import com.gsh.concurrent.util.Tools;
+
 
 public class FakeFTPUploader implements FTPUploader {
     @Override

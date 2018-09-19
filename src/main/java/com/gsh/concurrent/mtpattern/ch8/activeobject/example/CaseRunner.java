@@ -13,6 +13,9 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch8.activeobject.example;
 
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.mtpattern.ch5.tpt.DelegatingTerminatableThread;
+
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Files;
@@ -24,8 +27,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch5.tpt.DelegatingTerminatableThread;
 
 public class CaseRunner {
 

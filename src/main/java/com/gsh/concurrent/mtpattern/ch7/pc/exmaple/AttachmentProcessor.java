@@ -22,16 +22,16 @@ import java.nio.file.StandardCopyOption;
 import java.text.Normalizer;
 import java.util.concurrent.ArrayBlockingQueue;
 
-import io.github.viscent.mtpattern.ch5.tpt.AbstractTerminatableThread;
-import io.github.viscent.mtpattern.ch7.pc.BlockingQueueChannel;
-import io.github.viscent.mtpattern.ch7.pc.Channel;
-import io.github.viscent.util.Tools;
+import com.gsh.concurrent.mtpattern.ch5.tpt.AbstractTerminatableThread;
+import com.gsh.concurrent.mtpattern.ch7.pc.BlockingQueueChannel;
+import com.gsh.concurrent.mtpattern.ch7.pc.Channel;
+import com.gsh.concurrent.util.Tools;
+
 
 //模式角色：Producer-Consumer.Producer
 public class AttachmentProcessor {
     public static final String ATTACHMENT_STORE_BASE_DIR =
-            Tools
-                    .getWorkingDir("ch7/attachments");
+            Tools.getWorkingDir("ch7/attachments");
 
     // 模式角色：Producer-Consumer.Channel
     private final Channel<File> channel =

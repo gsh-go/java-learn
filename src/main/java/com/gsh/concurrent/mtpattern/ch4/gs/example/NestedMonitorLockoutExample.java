@@ -17,11 +17,11 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.Callable;
 
-import io.github.viscent.mtpattern.ch4.gs.Blocker;
-import io.github.viscent.mtpattern.ch4.gs.ConditionVarBlocker;
-import io.github.viscent.mtpattern.ch4.gs.GuardedAction;
-import io.github.viscent.mtpattern.ch4.gs.Predicate;
-import io.github.viscent.util.Debug;
+import com.gsh.concurrent.mtpattern.ch4.gs.Blocker;
+import com.gsh.concurrent.mtpattern.ch4.gs.ConditionVarBlocker;
+import com.gsh.concurrent.mtpattern.ch4.gs.GuardedAction;
+import com.gsh.concurrent.mtpattern.ch4.gs.Predicate;
+import com.gsh.concurrent.util.Debug;
 
 /**
  * 本程序是为了演示“嵌套监视器锁死“而写的，因此本程序需要通过手工终止进程才能结束。

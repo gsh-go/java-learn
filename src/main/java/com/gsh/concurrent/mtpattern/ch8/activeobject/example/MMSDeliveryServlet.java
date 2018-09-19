@@ -13,6 +13,8 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch8.activeobject.example;
 
+import com.gsh.concurrent.util.Debug;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLException;
@@ -22,7 +24,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import io.github.viscent.util.Debug;
 
 public class MMSDeliveryServlet extends HttpServlet {
 

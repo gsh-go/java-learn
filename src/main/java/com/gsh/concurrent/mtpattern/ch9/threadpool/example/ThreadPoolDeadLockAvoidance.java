@@ -13,13 +13,14 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch9.threadpool.example;
 
+import com.gsh.concurrent.util.Debug;
+
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.util.Debug;
 
 public class ThreadPoolDeadLockAvoidance {
     private final ThreadPoolExecutor threadPool =

@@ -13,34 +13,17 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch13.pipeline.example;
 
-import io.github.viscent.mtpattern.ch13.pipeline.AbstractParallelPipe;
-import io.github.viscent.mtpattern.ch13.pipeline.AbstractPipe;
-import io.github.viscent.mtpattern.ch13.pipeline.Pipe;
-import io.github.viscent.mtpattern.ch13.pipeline.PipeContext;
-import io.github.viscent.mtpattern.ch13.pipeline.PipeException;
-import io.github.viscent.mtpattern.ch13.pipeline.Pipeline;
-import io.github.viscent.mtpattern.ch13.pipeline.SimplePipeline;
+
+import com.gsh.concurrent.mtpattern.ch13.pipeline.*;
 
 import java.io.File;
 import java.io.IOException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
-import java.util.concurrent.RejectedExecutionHandler;
-import java.util.concurrent.SynchronousQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 public class DataSyncTask implements Runnable {
 

@@ -13,12 +13,13 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch4.gs;
 
+import com.gsh.concurrent.util.Debug;
+
 import java.util.concurrent.Callable;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import io.github.viscent.util.Debug;
 
 public class ConditionVarBlocker implements Blocker {
     private final Lock lock;

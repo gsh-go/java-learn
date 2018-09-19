@@ -13,6 +13,10 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch8.activeobject.example;
 
+import com.gsh.concurrent.mtpattern.ch14.hsha.example.SampleAlarmClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -24,13 +28,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
-import org.apache.log4j.Logger;
 
 //模式角色：ActiveObject.Proxy
 public class AsyncRequestPersistence implements RequestPersistence {
     private static final long ONE_MINUTE_IN_SECONDS = 60;
-    final static Logger logger =
-            Logger.getLogger(AsyncRequestPersistence.class);
+    private final static Logger logger = LoggerFactory.getLogger(AsyncRequestPersistence.class);
     final AtomicLong taskTimeConsumedPerInterval = new AtomicLong(0);
     final AtomicInteger requestSubmittedPerInterval = new AtomicInteger(0);
 

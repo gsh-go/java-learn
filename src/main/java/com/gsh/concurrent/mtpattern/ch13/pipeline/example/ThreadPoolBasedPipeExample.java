@@ -13,15 +13,17 @@ http://www.broadview.com.cn/27006
 
 package com.gsh.concurrent.mtpattern.ch13.pipeline.example;
 
+import com.gsh.concurrent.mtpattern.ch13.pipeline.AbstractPipe;
+import com.gsh.concurrent.mtpattern.ch13.pipeline.Pipe;
+import com.gsh.concurrent.mtpattern.ch13.pipeline.PipeException;
+import com.gsh.concurrent.mtpattern.ch13.pipeline.SimplePipeline;
+
 import java.util.Random;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import io.github.viscent.mtpattern.ch13.pipeline.AbstractPipe;
-import io.github.viscent.mtpattern.ch13.pipeline.Pipe;
-import io.github.viscent.mtpattern.ch13.pipeline.PipeException;
-import io.github.viscent.mtpattern.ch13.pipeline.SimplePipeline;
+
 
 public class ThreadPoolBasedPipeExample {
 

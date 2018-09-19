@@ -21,9 +21,9 @@ public class FTPUploaderPromisor {
         return newFTPUploaderPromise(ftpServer,ftpUserName,password,serverDir,helperExecutor);
     }
 
-    public static Future<FTPUploader> newFTPUploaderPromise(String ftpServer,
-            String ftpUserName, String password, String serverDir,
-            Executor helperExecutor) {
+    public static Future<FTPUploader> newFTPUploaderPromise(final String ftpServer,
+                                                            final String ftpUserName, final String password, final String serverDir,
+                                                            Executor helperExecutor) {
         Callable<FTPUploader> callable = new Callable<FTPUploader>() {
 
             @Override
