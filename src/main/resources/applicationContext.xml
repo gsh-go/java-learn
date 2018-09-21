@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans>
+    <bean name="student" class="com.gsh.spring.ioc.entity.Student" >
+        <property name="name" value="123"></property>
+    </bean>
+
+    <bean name="teacher" class="com.gsh.spring.ioc.entity.Teacher">
+        <property name="student" ref="student"></property>
+    </bean>
+    <bean name="person" class="com.gsh.spring.ioc.entity.Person" scope="prototype">
+        <property name="teacher" ref="teacher"></property>
+        <property name="student" ref="student"></property>
+    </bean>
+
+</beans>
