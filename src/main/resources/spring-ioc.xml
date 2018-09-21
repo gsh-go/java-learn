@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<beans>
-    <bean id = "testObject" class="com.gsh.spring.ioc.TestObject" />
-    <bean id = "testService" class = "com.gsh.spring.ioc.TestServiceImpl" />
-</beans>
