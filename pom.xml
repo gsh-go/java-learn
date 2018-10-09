@@ -6,6 +6,7 @@
 
     <groupId>com.gsh</groupId>
     <artifactId>java-learn-master</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <build>
         <plugins>
@@ -19,9 +20,10 @@
             </plugin>
         </plugins>
     </build>
-
-
-
+    <modules>
+        <module>netty-learn</module>
+        <module>design-patterns</module>
+    </modules>
 
 
     <dependencies>
