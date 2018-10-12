@@ -18,16 +18,17 @@ public class Acceptor implements Runnable {
     private final Selector selector;
 
     public Acceptor(Selector selector, ServerSocketChannel ssc) {
-        this.ssc=ssc;
-        this.selector=selector;
+        this.ssc = ssc;
+        this.selector = selector;
     }
 
+    @Override
     public void run() {
         try {
-            SocketChannel sc= ssc.accept();
+            SocketChannel sc = ssc.accept();
             System.out.println(sc.socket().getRemoteSocketAddress().toString() + " is connected.");
 
-            if(sc!=null) {
+            if (sc != null) {
                 sc.configureBlocking(false);
                 SelectionKey sk = sc.register(selector, SelectionKey.OP_READ);
                 selector.wakeup();
