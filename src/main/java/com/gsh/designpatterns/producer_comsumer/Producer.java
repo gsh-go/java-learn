@@ -26,11 +26,18 @@ public class Producer {
 
     private final String name;
 
-    private int itemId;
+    private int begin;
 
-    public Producer(String name, ItemQueue queue) {
+    private int end;
+
+    private String type;
+
+    public Producer(String name, ItemQueue queue, String type, int begin, int end) {
         this.name = name;
         this.queue = queue;
+        this.type = type;
+        this.begin = begin;
+        this.end = end;
     }
 
     /**
@@ -38,10 +45,9 @@ public class Producer {
      */
     public void produce() throws InterruptedException, DocumentException {
         String UserId;
-        for (int id = 0; id < 10000; id++) {
+        for (int id = begin; id < end; id++) {
             UserId = "0000" + id;
-            UserId = "A" + UserId.substring(UserId.length() - 5, UserId.length());
-
+            UserId = type + UserId.substring(UserId.length() - 5, UserId.length());
 
 
             /**关注号码并查询fid*/

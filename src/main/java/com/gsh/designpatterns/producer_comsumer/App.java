@@ -13,10 +13,10 @@ public class App {
         {
             ItemQueue queue = new ItemQueue();
 
-            ExecutorService executorService = Executors.newFixedThreadPool(5);
+            ExecutorService executorService = Executors.newFixedThreadPool(10);
             for (int i = 0; i < 1; i++) {
 
-                final Producer producer = new Producer("Producer_" + i, queue);
+                final Producer producer = new Producer("Producer_" + i, queue, "D", 8366, 10000);
                 executorService.submit(() -> {
                     while (true) {
                         producer.produce();
@@ -24,8 +24,8 @@ public class App {
                 });
             }
 
-            for (int i = 0; i < 4; i++) {
-                final Consumer consumer = new Consumer("Consumer_" + i, queue);
+            for (int i = 0; i < 19; i++) {
+                final Consumer consumer = new Consumer("Consumer_" + i, queue, "D");
                 executorService.submit(() -> {
                     while (true) {
                         consumer.consume();
