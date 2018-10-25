@@ -17,12 +17,12 @@ import com.google.gson.JsonParser;
 public class App {
     private static String URL = "https://www.runff.com/html/live/s1590.html?client=partner&isbxapimode=true&_xmltime=1539853073061.0.6301532038513451";
     private static String URI = "http://cdn.pic.runff.com";
-    private static String FILEPATH = "E:\\image\\";
+    private static String FILEPATH = "E:\\image_1\\";
 
 
     public static void main(String[] args) throws DocumentException {
         String UserId ;
-        for (int id = 104; id < 10000; id++) {
+        for (int id = 0; id < 10000; id++) {
             UserId = "0000" + id;
             UserId = "A" + UserId.substring(UserId.length() - 5, UserId.length());
             System.out.println(UserId);
@@ -43,6 +43,8 @@ public class App {
             Document document = DocumentHelper.parseText(result_id.trim().substring(1));
             Element rootElt = document.getRootElement();
             String fid = rootElt.element("Data").elementTextTrim("id");
+
+            httpClientUtil.doPost(URL, xml_cancel);
 
             if (fid != null) {
                 String xml = "<?xml version=\"1.0\" encoding=\"utf-8\"?><BxMessage><AppId>BxAPI</AppId><Type>1</Type><Action>getPhotoList</Action><Data>" +
