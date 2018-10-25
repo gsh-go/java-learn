@@ -23,14 +23,7 @@ package com.gsh.leetcode;
  * @Author: gsh
  * @Date: Created in 2018/10/24 8:09
  */
-class ListNode {
-    int val;
-    ListNode next;
 
-    ListNode(int x) {
-        val = x;
-    }
-}
 
 public class RotateList {
     public ListNode rotateRight(ListNode head, int k) {
