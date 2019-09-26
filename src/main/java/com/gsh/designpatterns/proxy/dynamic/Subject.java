@@ -6,7 +6,7 @@ package com.gsh.designpatterns.proxy.dynamic;
  * @Description:
  */
 public interface Subject {
-     void rent();
+    void rent();
 
-     void hello(String str);
+    void hello(String str);
 }
