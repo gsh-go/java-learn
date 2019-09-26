@@ -90,8 +90,6 @@ public class Producer {
                     path = jsonArray.get(i).getAsJsonObject().get("big").toString().replace("\"", "");
                     Item item = new Item(UserId, picId, path);
                     queue.put(item);
-                    /*Thread.sleep(random.nextInt(2000))*/
-                    //   download.downloadPicture(URI + path, FILEPATH + UserId + "\\" + name + ".jpg");
                 }
                 LOGGER.info("生产者正在解析RUNNER [{}] 的照片 ", UserId);
 

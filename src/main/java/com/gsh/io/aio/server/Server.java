@@ -2,7 +2,7 @@ package com.gsh.io.aio.server;
 /**
  * AIO服务端
  * @author yangtao__anxpp.com
- * @version 1.0
+ * @version others.0
  */
 public class Server {
 	private static int DEFAULT_PORT = 12345;

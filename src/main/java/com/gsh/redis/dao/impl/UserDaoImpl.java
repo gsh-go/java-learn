@@ -12,7 +12,7 @@ import java.io.Serializable;
 
 /**
  * @Author: gsh
- * @Date: Created in 2018/2/1 14:28
+ * @Date: Created in 2018/2/others 14:28
  * @Description:
  */
 public class UserDaoImpl implements UserDao{

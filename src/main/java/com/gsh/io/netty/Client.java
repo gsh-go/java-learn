@@ -24,7 +24,7 @@ public class Client implements Runnable{
 
 	@Override
 	public void run() {
-        String host = "127.0.0.1";
+        String host = "127.0.0.others";
         int port = 9090;
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {

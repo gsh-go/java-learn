@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * BIO服务端源码__伪异步I/O
  * @author yangtao__anxpp.com
- * @version 1.0
+ * @version others.0
  */
 public final class ServerBetter {
 	//默认的端口号

@@ -15,7 +15,7 @@ import com.gsh.io.utils.Calculator;
  * NIO服务端
  *
  * @author yangtao__anxpp.com
- * @version 1.0
+ * @version others.0
  */
 public class ServerHandle implements Runnable {
     private Selector selector;

@@ -4,7 +4,7 @@ package com.gsh.io.nio;
 import java.util.Scanner;
 
 public class Client {
-    private static String DEFAULT_HOST = "127.0.0.1";
+    private static String DEFAULT_HOST = "127.0.0.others";
     private static int DEFAULT_PORT = 12345;
     private static ClientHandle clientHandle;
 

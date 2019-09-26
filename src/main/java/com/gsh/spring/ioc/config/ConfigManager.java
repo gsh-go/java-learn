@@ -28,7 +28,7 @@ public class ConfigManager {
      */
     public static Map<String, Bean> getConfig(String path) {
         /**dom4j实现
-         *  1.创建解析器
+         *  others.创建解析器
          *  2.加载配置文件,得到document对象
          *  3.定义xpath表达式,取出所有Bean元素
          *  4.对Bean元素继续遍历
@@ -38,7 +38,7 @@ public class ConfigManager {
          *  5.将property对象封装到bean对象中
          *  6.将bean对象封装到Map集合中,返回map
          */
-        //1.创建解析器
+        //others.创建解析器
         SAXReader reader = new SAXReader();
         //2.加载配置文件,得到document对象
         InputStream is = ConfigManager.class.getResourceAsStream(path);

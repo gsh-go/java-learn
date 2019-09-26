@@ -4,7 +4,7 @@ import com.gsh.redis.obj.User;
 
 /**
  * @Author: gsh
- * @Date: Created in 2018/2/1 14:29
+ * @Date: Created in 2018/2/others 14:29
  * @Description:
  */
 public interface UserDao {

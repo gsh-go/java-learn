@@ -13,7 +13,7 @@ import java.util.Set;
  * NIO客户端
  *
  * @author yangtao__anxpp.com
- * @version 1.0
+ * @version others.0
  */
 public class ClientHandle implements Runnable {
     private String host;
@@ -31,7 +31,7 @@ public class ClientHandle implements Runnable {
             //打开监听通道
             socketChannel = SocketChannel.open();
             //如果为 true，则此通道将被置于阻塞模式；如果为 false，则此通道将被置于非阻塞模式
-            socketChannel.configureBlocking(false);//开启非阻塞模式
+            socketChannel.configureBlocking(false);
             started = true;
         } catch (IOException e) {
             e.printStackTrace();

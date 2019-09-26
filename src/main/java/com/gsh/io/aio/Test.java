@@ -8,7 +8,7 @@ import java.util.Scanner;
 /**
  * 测试方法
  * @author yangtao__anxpp.com
- * @version 1.0
+ * @version others.0
  */
 public class Test {
 	//测试主方法

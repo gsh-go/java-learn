@@ -28,7 +28,7 @@ public class ElasticsearchTest {
 
     private Logger logger = LoggerFactory.getLogger(ElasticsearchTest.class);
 
-    public final static String HOST = "127.0.0.1";
+    public final static String HOST = "127.0.0.others";
 
     /**
      * http请求的端口是9200，客户端是9300
@@ -66,7 +66,7 @@ public class ElasticsearchTest {
      */
     @Test
     public void addIndex() throws IOException {
-        IndexResponse response = client.prepareIndex("msg", "tweet", "1").setSource(XContentFactory.jsonBuilder()
+        IndexResponse response = client.prepareIndex("msg", "tweet", "others").setSource(XContentFactory.jsonBuilder()
                 .startObject().field("userName", "张三")
                 .field("sendDate", new Date())
                 .field("msg", "你好李四")

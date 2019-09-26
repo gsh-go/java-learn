@@ -5,7 +5,7 @@ import java.net.Socket;
 /**
  * BIO服务端源码
  * @author yangtao__anxpp.com
- * @version 1.0
+ * @version others.0
  */
 public final class ServerNormal {
 	//默认的端口号

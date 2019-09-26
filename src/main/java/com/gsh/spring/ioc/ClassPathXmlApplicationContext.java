@@ -16,13 +16,18 @@ import java.util.Map.Entry;
  * @Description:
  */
 public class ClassPathXmlApplicationContext implements BeanFactory {
-    //获得读取的配置文件中的Map信息
+
+    /**
+     * 获得读取的配置文件中的Map信息
+     */
     private Map<String, Bean> map;
-    // 作为IOC容器使用,放置sring放置的对象
+    /**
+     * 作为IOC容器使用,放置sring放置的对象
+     */
     private Map<String, Object> context = new HashMap<String, Object>();
 
     public ClassPathXmlApplicationContext(String path) {
-        // 1.读取配置文件得到需要初始化的Bean信息
+        // others.读取配置文件得到需要初始化的Bean信息
         map = ConfigManager.getConfig(path);
         // 2.遍历配置,初始化Bean
         for (Entry<String, Bean> en : map.entrySet()) {
