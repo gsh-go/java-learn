@@ -25,7 +25,7 @@
         <netty.version>4.1.4.Final</netty.version>
         <elasticsearch.version>5.5.2</elasticsearch.version>
         <redis.version>2.9.0</redis.version>
-        <spring.version>4.3.10.RELEASE</spring.version>
+        <spring.version>5.3.19</spring.version>
         <spring.data.redis.version>1.7.2.RELEASE</spring.data.redis.version>
         <dom4j.version>1.6.1</dom4j.version>
         <json.version>20141113</json.version>
